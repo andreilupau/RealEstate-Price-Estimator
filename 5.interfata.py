@@ -64,7 +64,5 @@ if st.button("Estimează prețul"):
 
 """
 Rulare:
-cd Lupau_Andrei_Imobiliare_AI> (daca nu e deja)
-.\venv\Scripts\activate (daca nu deja)
-streamlit run 5.interfata.py
+venv\Scripts\python -m streamlit run 5.interfata.py
 """

@@ -20,9 +20,9 @@ pip install -r requirements.txt
 python 1.preprocesare.py
 
 5. Antrenare modele:
-python 3_4_antrenare_evaluare.py
+venv\Scripts\python "3si4.antrenare&evaluare.py"
 
 6. Rulare interfață:
-streamlit run interfata_streamlit.py
+venv\Scripts\python -m streamlit run 5.interfata.py
 
 Pentru fiecare fisier se va respecta instructiunile de la final daca sunt.
