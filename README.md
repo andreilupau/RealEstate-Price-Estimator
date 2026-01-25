@@ -2,6 +2,9 @@
 
 A small end-to-end machine learning project that estimates apartment/house prices in Bucharest based on listing features (rooms, surface, year, floor, etc.). It includes data preprocessing, model training, a Streamlit UI for single predictions, and batch CSV predictions.
 
+
+<img width="1919" height="915" alt="Screenshot 2026-01-25 135511" src="https://github.com/user-attachments/assets/3e18e021-15c5-4743-abb5-417fa741fb0e" />
+
 ## What problem does it solve?
 
 Real estate prices vary a lot by size, location, and building characteristics. This project helps you:
@@ -82,7 +85,16 @@ python 2.exploratory_analysis.py
 
 - **Estimator**: single listing input → predicted price (EUR)
 - **Batch predictions**: upload a CSV and download results
+
+<img width="1200" height="440" alt="Screenshot 2026-01-25 135830" src="https://github.com/user-attachments/assets/fa78116a-b8ba-4798-a422-5cf8840adc92" />
+
+
 - **Data exploration**: quick stats + charts (uses `plotly` if installed)
+<img width="1200" height="440" alt="Screenshot 2026-01-25 135940" src="https://github.com/user-attachments/assets/73dbad36-2a66-4f8b-a6e7-bb33b1e9d483" />
+<img width="1200" height="440" alt="image" src="https://github.com/user-attachments/assets/981e60cf-f711-45ba-83bf-eba66ee9fe40" />
+
+
+
 - **Language toggle**: RO/EN UI strings (simple in-app i18n)
 
 
