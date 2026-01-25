@@ -47,7 +47,7 @@ venv\Scripts\activate
 ### 2) Install dependencies
 
 ```bash
-pip install -r "README+REQ (ro)\requirements.txt"
+pip install -r requirements.txt
 ```
 
 ### 3) Preprocess data
@@ -84,3 +84,6 @@ python 2.exploratory_analysis.py
 - **Batch predictions**: upload a CSV and download results
 - **Data exploration**: quick stats + charts (uses `plotly` if installed)
 - **Language toggle**: RO/EN UI strings (simple in-app i18n)
+
+
+##Thank you for your attention!
