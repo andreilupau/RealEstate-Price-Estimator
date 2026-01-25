@@ -2,7 +2,6 @@
 
 A small end-to-end machine learning project that estimates apartment/house prices in Bucharest based on listing features (rooms, surface, year, floor, etc.). It includes data preprocessing, model training, a Streamlit UI for single predictions, and batch CSV predictions.
 
-
 <img width="1919" height="915" alt="Screenshot 2026-01-25 135511" src="https://github.com/user-attachments/assets/3e18e021-15c5-4743-abb5-417fa741fb0e" />
 
 ## What problem does it solve?
@@ -53,27 +52,24 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3) Preprocess data
-
-```bash
-python 1.preprocessing.py
-```
-
-### 4) Train the model
-
-```bash
-python 3.training.py
-```
-
-This should generate artifacts in `models/` (e.g. model + feature columns) and a scaler (either in `models/` or `data/`, depending on your pipeline).
-
-### 5) Run the web interface
+### 3) Run the web interface
 
 ```bash
 python -m streamlit run 4.interface.py
 ```
 
 Open the URL shown in the terminal (usually `http://localhost:8501`).
+
+> Note: This repo already includes the prepared CSV in `data/` and the trained artifacts in `models/`, so you can run the UI directly.
+
+### Optional: regenerate data + retrain
+
+Run these only if you changed the dataset, preprocessing, or want to retrain the model.
+
+```bash
+python 1.preprocessing.py
+python 3.training.py
+```
 
 ### Optional: Run exploratory analysis
 
@@ -88,14 +84,10 @@ python 2.exploratory_analysis.py
 
 <img width="1200" height="440" alt="Screenshot 2026-01-25 135830" src="https://github.com/user-attachments/assets/fa78116a-b8ba-4798-a422-5cf8840adc92" />
 
-
 - **Data exploration**: quick stats + charts (uses `plotly` if installed)
-<img width="1200" height="440" alt="Screenshot 2026-01-25 135940" src="https://github.com/user-attachments/assets/73dbad36-2a66-4f8b-a6e7-bb33b1e9d483" />
-<img width="1200" height="440" alt="image" src="https://github.com/user-attachments/assets/981e60cf-f711-45ba-83bf-eba66ee9fe40" />
-
-
+  <img width="1200" height="440" alt="Screenshot 2026-01-25 135940" src="https://github.com/user-attachments/assets/73dbad36-2a66-4f8b-a6e7-bb33b1e9d483" />
+  <img width="1200" height="440" alt="image" src="https://github.com/user-attachments/assets/981e60cf-f711-45ba-83bf-eba66ee9fe40" />
 
 - **Language toggle**: RO/EN UI strings (simple in-app i18n)
-
 
 ##Thank you for your attention!
