@@ -74,7 +74,5 @@ joblib.dump(lin_reg, "models/model_linreg.pkl")
 joblib.dump(feature_columns, "models/feature_columns.pkl")
 print("Saved: models/model_linreg.pkl, feature_columns.pkl")
 
-"""
-###Rulare:
-venv\Scripts\python "3si4.antrenare&evaluare.py"
-"""
+
+#rulare manuala: venv\Scripts\python "3.training.py"

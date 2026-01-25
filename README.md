@@ -23,6 +23,11 @@ Real estate prices vary a lot by size, location, and building characteristics. T
 - Raw dataset: `data/house_offers.csv`
 - Preprocessed dataset: `data/bucuresti_ready.csv`
 
+> **Warning / Disclaimer**
+>
+> This project uses a dataset collected around **2020** to train the model, so the estimated prices will not be fully accurate in today’s marketplace.
+> You _can_ use a more recent dataset, but it will require **code changes** (it’s not plug-and-play): you’ll need to update the preprocessing/training pipeline and then retrain the model.
+
 ## Project scripts
 
 - `1.preprocessing.py` — preprocessing + feature engineering + scaler export
@@ -79,4 +84,3 @@ python 2.exploratory_analysis.py
 - **Batch predictions**: upload a CSV and download results
 - **Data exploration**: quick stats + charts (uses `plotly` if installed)
 - **Language toggle**: RO/EN UI strings (simple in-app i18n)
-

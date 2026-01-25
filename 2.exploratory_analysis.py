@@ -71,9 +71,3 @@ plt.ylabel("Preț median (€/mp)")
 plt.title("Top 10 cartiere după prețul pe metru pătrat")
 plt.grid(True, axis="y", alpha=0.3)
 plt.show()
-
-
-#Rulare:
-#cd Lupau_Andrei_Imobiliare_AI (daca nu e deja)
-#venv\Scripts\activate
-#run python file(colt dreapta)

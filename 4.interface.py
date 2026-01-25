@@ -1,9 +1,7 @@
 from __future__ import annotations
-
 import os
 from dataclasses import dataclass
 from typing import Iterable
-
 import joblib
 import numpy as np
 import pandas as pd
@@ -58,24 +56,33 @@ CUSTOM_CSS = """
   .result {
     border-radius: 16px;
     padding: 16px;
-    background: linear-gradient(135deg, rgba(2,6,23,.75), rgba(15,23,42,.55));
+        background: rgba(2, 6, 23, 0.78);
     border: 1px solid rgba(148, 163, 184, 0.18);
+        box-shadow: none !important;
+        filter: none !important;
   }
   .result .big { font-size: 2rem; font-weight: 700; color: #e2e8f0; margin: 0; }
   .result .muted { color: rgba(226,232,240,.75); margin: .35rem 0 0 0; }
 
     /* Green success result variant */
     .result--success {
-        background: linear-gradient(135deg, rgba(16,185,129,.35), rgba(16,185,129,.12));
-        border: 1px solid rgba(16,185,129,.55);
+        /* much darker green */
+        background: rgba(6, 78, 59, 0.62);
+        border: 1px solid rgba(16,185,129,.28);
+        box-shadow: none !important;
+        filter: none !important;
     }
+
+    /* Brighter text on green background */
+    .result--success .big { color: #f8fafc; }
+    .result--success .muted { color: rgba(248,250,252,.90); }
 </style>
 """
 st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 
 
 # =========================
-# i18n (RO / EN)
+# Language chooser i18n (RO / EN)
 # =========================
 LANG_OPTIONS = {
     "Romanian": "ro",
@@ -441,11 +448,6 @@ if page == "estimator":
                 unsafe_allow_html=True,
             )
 
-            m1, m2, m3 = st.columns(3)
-            m1.metric(t("metric_rooms"), int(rooms_count))
-            m2.metric(t("metric_useful"), f"{float(useful_surface):.0f} mp")
-            m3.metric(t("metric_area"), location_area or t("area_base"))
-
             st.caption(t("model_caption"))
         else:
             st.info(t("fill_form"), icon="ℹ️")
@@ -593,4 +595,4 @@ else:
     st.markdown(t("tips"))
 
 
-#to run the ui type in console: venv\\Scripts\\python -m streamlit run 5.interfata.py
+#to run: venv\\Scripts\\python -m streamlit run 4.interface.py
