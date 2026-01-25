@@ -91,7 +91,8 @@ python 2.exploratory_analysis.py
 
 - **Data exploration**: quick stats + charts (uses `plotly` if installed)
 <img width="1200" height="440" alt="Screenshot 2026-01-25 135940" src="https://github.com/user-attachments/assets/73dbad36-2a66-4f8b-a6e7-bb33b1e9d483" />
-<img width="1200" height="440" alt="Screenshot 2026-01-25 140016" src="https://github.com/user-attachments/assets/c67d4477-ca4a-4b8a-9f92-39a74791c23b" />
+<img width="1200" height="440" alt="image" src="https://github.com/user-attachments/assets/981e60cf-f711-45ba-83bf-eba66ee9fe40" />
+
 
 
 - **Language toggle**: RO/EN UI strings (simple in-app i18n)
