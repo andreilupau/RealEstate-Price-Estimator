@@ -58,7 +58,7 @@ pip install -r requirements.txt
 python -m streamlit run 4.interface.py
 ```
 
-Open the URL shown in the terminal (usually `http://localhost:8501`).
+### That's it!
 
 > Note: This repo already includes the prepared CSV in `data/` and the trained artifacts in `models/`, so you can run the UI directly.
 
