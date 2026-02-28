@@ -60,8 +60,6 @@ python -m streamlit run 4.interface.py
 
 ### That's it!
 
-> Note: This repo already includes the prepared CSV in `data/` and the trained artifacts in `models/`, so you can run the UI directly.
-
 ### Optional: regenerate data + retrain
 
 Run these only if you changed the dataset, preprocessing, or want to retrain the model.
@@ -69,12 +67,6 @@ Run these only if you changed the dataset, preprocessing, or want to retrain the
 ```bash
 python 1.preprocessing.py
 python 3.training.py
-```
-
-### Optional: Run exploratory analysis
-
-```bash
-python 2.exploratory_analysis.py
 ```
 
 ## App features
