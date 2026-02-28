@@ -12,30 +12,6 @@ Real estate prices vary a lot by size, location, and building characteristics. T
 - run **batch predictions** for multiple listings from a CSV
 - do a quick **exploratory analysis** of the raw dataset
 
-## Tech stack
-
-- Python, pandas, NumPy
-- scikit-learn (model + scaler)
-- Streamlit (web UI)
-- joblib (model persistence)
-- Plotly (optional charts in the UI)
-
-## Data
-
-- Raw dataset: `data/house_offers.csv`
-- Preprocessed dataset: `data/bucuresti_ready.csv`
-
-> **Warning / Disclaimer**
->
-> This project uses a dataset collected around **2020** to train the model, so the estimated prices will not be fully accurate in today’s marketplace.
-> You _can_ use a more recent dataset, but it will require **code changes** (it’s not plug-and-play): you’ll need to update the preprocessing/training pipeline and then retrain the model.
-
-## Project scripts
-
-- `1.preprocessing.py` — preprocessing + feature engineering + scaler export
-- `2.exploratory_analysis.py` — exploratory plots (matplotlib)
-- `3.training.py` — training + evaluation + exporting model artifacts
-- `4.interface.py` — Streamlit app (single prediction, batch prediction, data exploration)
 
 ## How to run (Windows)
 
